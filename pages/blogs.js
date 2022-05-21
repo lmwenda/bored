@@ -33,7 +33,7 @@ export default function blogs ({ blogs }){
                         <Flex justifyContent="center" flexDirection="column">
                             {
                                 blogs.map(blog => (
-                                    <Blog blog={blogs} />
+                                    <Blog blog={blog} />
                                 ))
                             }
                             <Text textAlign="center">Refresh Page to get another task</Text>
