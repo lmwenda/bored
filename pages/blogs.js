@@ -37,7 +37,7 @@ export default function blogs ({ blogs }){
                                 ))
                             } */}
 
-                            <Blog blog={blog} />
+                            <Blog blog={blogs} />
                             <Text textAlign="center">Refresh Page to get another task</Text>
                         </Flex>
                     </Box>
