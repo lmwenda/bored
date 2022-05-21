@@ -31,13 +31,11 @@ export default function blogs ({ blogs }){
 
                     <Box>
                         <Flex justifyContent="center" flexDirection="column">
-                            {/* {
+                            {
                                 blogs.map(blog => (
-                                    <Blog key={blog.id} blog={blog} />
+                                    <Blog blog={blogs} />
                                 ))
-                            } */}
-
-                            <Blog blog={blogs} />
+                            }
                             <Text textAlign="center">Refresh Page to get another task</Text>
                         </Flex>
                     </Box>
