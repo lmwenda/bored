@@ -1,9 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import Router from 'next/router'
 import { motion } from 'framer-motion';
 import { Box, Heading, Flex, Text } from "@chakra-ui/react";
-import { Task } from '../components/Task';
 import { Blog } from '../components/Blog';
 import { server } from '../config';
 
@@ -33,7 +31,7 @@ export default function blogs ({ blogs }){
                         <Flex justifyContent="center" flexDirection="column">
                             {
                                 blogs.map(blog => (
-                                    <Blog blog={blog} />
+                                    <Blog key={blog.id} blog={blog} />
                                 ))
                             }
                             <Text textAlign="center">Refresh Page to get another task</Text>
