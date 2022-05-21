@@ -1,10 +1,8 @@
 import {
     Box,
     Center,
-    Heading,
     Text,
     Stack,
-    Avatar,
     useColorModeValue,
   } from '@chakra-ui/react';
   

@@ -31,11 +31,13 @@ export default function blogs ({ blogs }){
 
                     <Box>
                         <Flex justifyContent="center" flexDirection="column">
-                            {
+                            {/* {
                                 blogs.map(blog => (
                                     <Blog key={blog.id} blog={blog} />
                                 ))
-                            }
+                            } */}
+
+                            <Blog blog={blog} />
                             <Text textAlign="center">Refresh Page to get another task</Text>
                         </Flex>
                     </Box>
@@ -48,7 +50,7 @@ export default function blogs ({ blogs }){
 }
 
 export const getStaticProps = async() => {
-    const data = await fetch(`${server}/api/blogs`);
+    const data = await fetch(`https://jsonplaceholder.typicode.com/posts`);
     const blogs = await data.json();
 
     return {
